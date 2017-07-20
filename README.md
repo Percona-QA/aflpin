@@ -1,5 +1,13 @@
 # AFLPIN
 
+-------------------------------------------------------------------------------
+
+A fork of [mothran/aflpin](https://github.com/mothran/aflpin), which can be built under Pin 3.2/Ubuntu14.04.
+
+-------------------------------------------------------------------------------
+
+ 
+
 AFLPIN enables the AFL fuzzer (http://lcamtuf.coredump.cx/afl/) to fuzz non-instrumented binaries using Intel's PIN. 
 
 It does so by inserting the same type of branch detection and shared memory mappings that AFL adds to instrumented binaries.  
