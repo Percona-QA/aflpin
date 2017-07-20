@@ -1,5 +1,4 @@
 #include <pin.H>
-#include <string>
 #include <cstdlib>
 #include <unistd.h>
 #include <iostream>
@@ -155,7 +154,7 @@ INT32 Usage()
 bool setup_shm() {
     if (char *shm_id_str = getenv("__AFL_SHM_ID")) {
         int shm_id;
-        shm_id = std::stoi(shm_id_str);
+        shm_id = std::atoi(shm_id_str);
         std::cout << "shm_id: " << shm_id << std::endl;        
         
         bitmap_shm = reinterpret_cast<uint8_t*>(shmat(shm_id, 0, 0));
